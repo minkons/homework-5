@@ -1,0 +1,270 @@
+@import url(reset.css);
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+        url('../fonts/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+   font-family: 'Roboto';
+   font-weight: 400;
+   font-size: 14px;
+   color: #212121;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+
+/*HEADER*/
+
+.header {
+    padding: 24px 0;
+    font-weight: 500;
+    border: 1px solid #ececec;
+}
+.header-container {
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+    margin-right: 93px;
+}
+.header-menu, .header-menu-right {
+    gap: 50px;
+}
+.header-menu-item a, .header-menu-right-item a, .hero-button, .portfolio-menu-item a {
+    text-decoration: none;
+}
+.header-menu-item a {
+ color:inherit;
+}
+.header-menu-item:hover a, .header-menu-item a.active, .header-menu-right-item:hover a, .footer-menu-item:hover{
+    color: #2196F3;
+}
+.header-menu-right {
+    margin-left: auto;
+}
+
+.header-menu-right-item a {
+    color: #757575;
+}
+.fw-700{
+    font-weight: 700;
+}
+
+/*HERO*/
+
+.hero {
+    height: 600px;
+    background-color: #2F303A;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    letter-spacing: 2.64px;
+    line-height: 60px;
+}
+.hero-button {
+    background-color: #2196F3;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 16px 46px 15px;
+    border-radius: 4px;
+    letter-spacing: 0.96px;
+    display: inline-block;
+}
+.hero-button:hover, .portfolio-menu .all-active:hover{
+    background-color: #127dd4;
+}
+
+/*PORTFOLIO HERO*/
+.hero-portfolio {
+    padding: 94px 0 0 0;
+    font-weight: 500;
+  }
+  .portfolio-menu {
+      gap:8px;
+      justify-content: center;
+  }
+  .portfolio-menu-item {
+      padding: 6px 25px;
+      background-color: #F5F4FA;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+  }
+  .portfolio-menu-item a{
+     color: #212121;
+  }
+
+  .hero-title,.hero-button, .portfolio-menu-item .all-active, .all-active a,.portfolio-menu-item:hover a, .footer-menu-desc {
+    color: #FFF;
+}
+
+/*ABOUT*/
+
+.about {
+    padding: 94px 0 0;
+}
+.about-cards, .do-cards, .team-cards, .portfolio-cards {
+    gap: 30px;
+}
+.about-card {
+    flex: 1 1 25%;
+}
+.about-title, .team-title {
+    margin: 0 0 10px;
+}
+.about-title {
+    text-transform: uppercase;
+}
+.about-desc {
+    color: #757575;
+    text-align: justify;
+}
+
+/*DO*/
+.do { 
+    padding: 94px 0;
+}
+.do-title {
+    font-size: 36px;
+    text-align: center;
+    padding: 0 0 50px;
+}
+
+.do-card {
+    flex: 1 1 28%;
+    height: 294px;
+}
+.do-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*TEAM*/
+.team {
+    padding: 94px 0;
+    background-color: #F5F4FA;
+}
+.team-title-main {
+    text-align: center;
+    font-size: 36px;
+}
+.team-cards, .portfolio-cards {
+    padding: 50px 0 0 0;
+}
+.team-card {
+    flex: 1 1 25%;
+    border-top: 1px solid #e0e0e0;
+    border-right: 2px solid #dbdbdb;
+    border-bottom: 3px solid #cccccc;
+    border-left: 1px solid #e0e0e0;
+}
+.team-card img, .portfolio-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.team-item {
+    text-align: center;
+    padding: 33px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+}
+.team-desc, .portfolio-desc {
+   color: #757575;
+   font-size: 16px;
+}
+.team-item,.portfolio-item {
+    background-color: #FFF;
+} 
+/*PORTFOLIO*/
+.portfolio {
+    padding:0 0 94px 0;
+}
+.portfolio-cards {
+    flex-wrap: wrap;
+}
+.portfolio-card {
+    flex: 1 1 28%;
+    border: 1px solid #EEE;
+}
+.portfolio-item{
+    padding: 29px 24px;
+}
+.portfolio-title{
+    font-size: 18px;
+    margin: 0 0 18px;
+}
+
+/* FOOTER*/
+footer {
+    padding: 60px 0;
+    background-color: #2F303A;
+}
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.footer-menu {
+    flex-flow: column;
+    gap:9px;
+}
+
+.footer-menu-item {
+    color: #757575;
+    text-decoration: none;
+    align-self: flex-start;
+}
+.all-active, .portfolio-menu-item:hover{
+    background-color: #2196F3;
+    color:#2196F3;
+}
